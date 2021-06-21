@@ -10,7 +10,7 @@ import (
 
 	l "github.com/acky666/ackyLog"
 
-	Crawler "AckersCrawler/Crawler"
+	Crawler "github.com/acky666/WebCrawler/Crawler"
 )
 
 func main() {

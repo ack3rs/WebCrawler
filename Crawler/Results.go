@@ -1,6 +1,7 @@
 package Crawler
 
 import (
+	"encoding/json"
 	"fmt"
 )
 
@@ -21,4 +22,14 @@ func Results() {
 		fmt.Printf("%.80s %10v %10d\n", URL, info.Visited, info.TotalLinks)
 	}
 
+}
+
+func ResultsJSON() ([]byte, error) {
+
+	out, err := json.Marshal(AllLinks.GetLinkMap())
+	if err != nil {
+		return []byte(""), err
+	}
+
+	return out, nil
 }
