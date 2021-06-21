@@ -1,4 +1,6 @@
-### A Basic Web Crawler 
+# A Basic Web Crawler 
+
+### a simple web crawler that grabs all the URLS on a website, for a coding exercise.  
 
 to run type 
 
